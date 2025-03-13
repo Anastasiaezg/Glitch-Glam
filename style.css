@@ -1,0 +1,83 @@
+
+body {
+    background-color: #f3eaea;
+}
+
+h1 {
+    background-color: #5a2525;
+    padding: 0.3em;
+    border: 0.2em solid #5a2525;
+    color: #f3eaea;
+    text-align: center;
+    position: relative;
+    font-size: 1.9em;
+}
+
+.choose {
+    background-color: #5c2d2d;
+    padding: 0.6em;
+    text-align: center;
+    width: 100%;
+}
+
+button {
+    background-color: #f3eaea;
+    border: 0.13em solid #5a2525;
+    border-radius: 0.6em;
+    color: #5c2d2d;
+    padding: 0.25em;
+    font-size: 1.56em;
+    margin-left: 0.9em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* figuur foto's: https://paperthinpersonas.com/2011/02/27/pixie-amelia/ */
+
+#dressUpContainer {
+    display: grid;
+    place-items: center;
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+
+/* Robin Van der Heijden heeft me geholpen */
+#figuurContainer {
+    position: relative;
+}
+/* topjes */
+#topContainer {
+    position: absolute;
+    top: 7.5em;
+    left: -0.4em;
+}
+
+#topContainer img {
+    width: 18em;
+    height: auto;
+}
+/* broeken */
+#bottomContainer {
+    position: absolute;
+    top: 12.5em;
+    left:4em;
+}
+
+#bottomContainer img { 
+    width: 9.4em;
+    height: auto;
+}
+
+/* schoenen */
+#shoesContainer {
+    position: absolute;
+    top: 19.6em;
+    left: 5.2em;
+}
+
+#shoesContainer img {
+    width: 7.2em;
+    height: auto;
+}
+
+
