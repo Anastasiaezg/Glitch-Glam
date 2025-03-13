@@ -1,7 +1,7 @@
 /* Tops */
 const topImage = document.getElementById("topImage");
 const changeTop = document.getElementById("changeTop");
-const topjes = ["#", "top1", "top2", "top3"];
+const tops = ["#", "top1", "top2", "top3"];
 
 // Broeken
 const bottomImage = document.getElementById("bottomImage");
@@ -15,7 +15,7 @@ const shoes = ["#","shoes1", "shoes2", "shoes3"];
 
 // Sounds
 const audio = document.getElementById("sounds");
-const klaarKnop = document.getElementById("klaarknop");
+const doneButton = document.getElementById("donebutton");
 
 // Index
 let topIndex = 0;
@@ -23,15 +23,15 @@ let bottomIndex = 0;
 let shoesIndex = 0;
 
 // Function tops
-function veranderTop() {
+function edittop() {
     topIndex++;
-    if (topIndex >= topjes.length) {
+    if (topIndex >= tops.length) {
         topIndex = 0;
     }
-    topImage.src = "doll/" + topjes[topIndex] + ".png";
+    topImage.src = "doll/" + tops[topIndex] + ".png";
 }
 // Function bottoms
-function veranderbottom() {
+function editbottom() {
     bottomIndex++;
     if (bottomIndex >= bottoms.length) {
         bottomIndex = 0;
@@ -40,7 +40,7 @@ function veranderbottom() {
 }
 
 // Function shoes
-function verandershoes() {
+function editshoes() {
     shoesIndex++;
     if (shoesIndex >= shoes.length) {
         shoesIndex = 0;
@@ -49,16 +49,16 @@ function verandershoes() {
 }
 
 /* Function sound */
-function speelAudio() {
+function playAudio() {
     audio.play(); /* https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/play */
 }
 
 
 // AddEventListener
-changeTop.addEventListener("click", veranderTop);
-changeBottom.addEventListener("click", veranderbottom);
-changeShoes.addEventListener("click", verandershoes);
-klaarKnop.addEventListener("click", speelAudio);
+changeTop.addEventListener("click", edittop);
+changeBottom.addEventListener("click", editbottom);
+changeShoes.addEventListener("click", editshoes);
+doneButton.addEventListener("click", playAudio);
 
 
 
