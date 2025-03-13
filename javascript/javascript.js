@@ -23,7 +23,7 @@ let bottomIndex = 0;
 let shoesIndex = 0;
 
 // Function tops
-function edittop() {
+function editTop() {
     topIndex++;
     if (topIndex >= tops.length) {
         topIndex = 0;
@@ -31,7 +31,7 @@ function edittop() {
     topImage.src = "doll/" + tops[topIndex] + ".png";
 }
 // Function bottoms
-function editbottom() {
+function editBottom() {
     bottomIndex++;
     if (bottomIndex >= bottoms.length) {
         bottomIndex = 0;
@@ -40,7 +40,7 @@ function editbottom() {
 }
 
 // Function shoes
-function editshoes() {
+function editShoes() {
     shoesIndex++;
     if (shoesIndex >= shoes.length) {
         shoesIndex = 0;
@@ -55,9 +55,9 @@ function playAudio() {
 
 
 // AddEventListener
-changeTop.addEventListener("click", edittop);
-changeBottom.addEventListener("click", editbottom);
-changeShoes.addEventListener("click", editshoes);
+changeTop.addEventListener("click", editTop);
+changeBottom.addEventListener("click", editBottom);
+changeShoes.addEventListener("click", editShoes);
 doneButton.addEventListener("click", playAudio);
 
 
