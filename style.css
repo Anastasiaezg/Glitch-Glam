@@ -31,6 +31,11 @@ button {
     font-family: 'Times New Roman', Times, serif;
 }
 
+button:hover {
+    background-color: #5a2525;
+    color: #f3eaea;
+}
+
 /* figuur foto's: https://paperthinpersonas.com/2011/02/27/pixie-amelia/ */
 
 #dressUpContainer {
@@ -79,5 +84,6 @@ button {
     width: 7.2em;
     height: auto;
 }
+
 
 

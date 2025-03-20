@@ -30,6 +30,7 @@ function editTop() {
     }
     topImage.src = "doll/" + tops[topIndex] + ".png";
 }
+
 // Function bottoms
 function editBottom() {
     bottomIndex++;
@@ -59,13 +60,5 @@ changeTop.addEventListener("click", editTop);
 changeBottom.addEventListener("click", editBottom);
 changeShoes.addEventListener("click", editShoes);
 doneButton.addEventListener("click", playAudio);
-
-
-
-
-
-
-
-
 
 
